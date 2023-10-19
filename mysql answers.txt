@@ -1,0 +1,7 @@
+############################## MYSQL Answers ########################################
+
+1. SELECT Artist, Album, (`2022 Sales`) AS Sold FROM tbl_music
+2. SELECT Artist, SUM(`2022 Sales`) AS combined_album_sales FROM tbl_music GROUP BY Artist
+3. SELECT Artist, SUM(`2022 Sales`) AS combined_album_sales FROM tbl_music GROUP BY Artist ORDER BY combined_album_sales DESC LIMIT 1
+4. SELECT Artist, Album, (`Date Released`) AS Year, (`2022 Sales`) AS Sales FROM tbl_music ORDER BY Sales DESC LIMIT 10
+5. SELECT Artist, Album FROM tbl_music WHERE Artist = 'twice'
